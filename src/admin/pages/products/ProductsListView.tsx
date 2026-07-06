@@ -33,7 +33,7 @@ export const ProductsListView = ({ products }: Props) => {
 
         {products.map((product) => (
           <TableBody>
-            <TableRow>
+            <TableRow key={product.id}>
               <TableCell>
                 <img
                   src={product.images[0]}
